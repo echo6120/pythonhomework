@@ -1,5 +1,6 @@
 #coding:utf-8
 import requests
+#测试登录功能，发现该接口将用户名和密码（md5加密后）的敏感信息暴露在URL里，尝试爆破，多次请求后有ip限制，但是通过下面的脚本可以继续爆破
 
 # 需要测试的登陆地址
 url = "https://**********&username=%s&password=%s&um=true"
